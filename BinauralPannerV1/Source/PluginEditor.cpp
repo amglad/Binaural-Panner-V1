@@ -18,6 +18,15 @@ BinauralPannerV1AudioProcessorEditor::BinauralPannerV1AudioProcessorEditor (Bina
     setSize (417, 419);
     
     bgImage = juce::ImageCache::getFromMemory(BinaryData::background_png, BinaryData::background_pngSize);
+    
+    slider1.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
+    slider1.setBounds(50,50,150,150);
+    slider1.setTextBoxStyle(juce::Slider::NoTextBox, false, 0, 0);
+    slider1.setLookAndFeel(&lookAndFeelV3);
+    addAndMakeVisible(slider1);
+    
+    
+    
 }
 
 BinauralPannerV1AudioProcessorEditor::~BinauralPannerV1AudioProcessorEditor()

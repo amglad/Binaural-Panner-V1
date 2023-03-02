@@ -31,6 +31,10 @@ private:
     
     juce::Image bgImage;
     
+    juce::Slider slider1;
+    
+    juce::LookAndFeel_V1 lookAndFeelV3;
+    
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (BinauralPannerV1AudioProcessorEditor)
 };
