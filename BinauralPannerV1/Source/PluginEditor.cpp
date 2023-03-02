@@ -25,6 +25,12 @@ BinauralPannerV1AudioProcessorEditor::BinauralPannerV1AudioProcessorEditor (Bina
     slider1.setLookAndFeel(&largeKnobLNF);
     addAndMakeVisible(slider1);
     
+    slider2.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
+    slider2.setBounds(250,250,100,100);
+    slider2.setTextBoxStyle(juce::Slider::NoTextBox, false, 0, 0);
+    slider2.setLookAndFeel(&smallKnobLNF);
+    addAndMakeVisible(slider2);
+    
     
     
 }

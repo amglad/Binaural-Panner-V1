@@ -17,6 +17,8 @@
         <FILE id="ZWsqzQ" name="knob_small.png" compile="0" resource="1" file="Source/BinaryData/knob_small.png"/>
       </GROUP>
       <GROUP id="{63583A9C-5C3E-F99B-37DD-17A580361919}" name="Components">
+        <FILE id="sHrSHs" name="SmallKnob.cpp" compile="1" resource="0" file="Source/Components/SmallKnob.cpp"/>
+        <FILE id="h7jmzM" name="SmallKnob.h" compile="0" resource="0" file="Source/Components/SmallKnob.h"/>
         <FILE id="Pee7cI" name="LargeKnob.cpp" compile="1" resource="0" file="Source/Components/LargeKnob.cpp"/>
         <FILE id="PGNEy5" name="LargeKnob.h" compile="0" resource="0" file="Source/Components/LargeKnob.h"/>
       </GROUP>

@@ -11,6 +11,7 @@
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
 #include "Components/LargeKnob.h"
+#include "Components/SmallKnob.h"
 
 //==============================================================================
 /**
@@ -33,10 +34,12 @@ private:
     juce::Image bgImage;
     
     juce::Slider slider1;
+    juce::Slider slider2;
     
     juce::LookAndFeel_V1 lookAndFeelV3;
     
     LargeKnob largeKnobLNF;
+    SmallKnob smallKnobLNF;
     
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (BinauralPannerV1AudioProcessorEditor)
