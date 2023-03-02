@@ -33,6 +33,12 @@ BinauralPannerV1AudioProcessorEditor::BinauralPannerV1AudioProcessorEditor (Bina
     
     
     
+    effectSelector.addListener(this);
+    effectSelector.addItem("None", 1);
+    effectSelector.addItem("Gain", 2);
+    effectSelector.setBounds(300,50,150,50);
+    addAndMakeVisible(effectSelector);
+    
 }
 
 BinauralPannerV1AudioProcessorEditor::~BinauralPannerV1AudioProcessorEditor()
@@ -51,4 +57,12 @@ void BinauralPannerV1AudioProcessorEditor::resized()
 {
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
+}
+
+
+void BinauralPannerV1AudioProcessorEditor::comboBoxChanged (juce::ComboBox *comboBoxThatHasChanged)
+{
+    if (comboBoxThatHasChanged == &effectSelector) {
+        audioProcessor.setEffect(effectSelector.getSelectedId());
+    }
 }

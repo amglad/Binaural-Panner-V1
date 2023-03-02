@@ -22,6 +22,12 @@
         <FILE id="Pee7cI" name="LargeKnob.cpp" compile="1" resource="0" file="Source/Components/LargeKnob.cpp"/>
         <FILE id="PGNEy5" name="LargeKnob.h" compile="0" resource="0" file="Source/Components/LargeKnob.h"/>
       </GROUP>
+      <GROUP id="{8B65E94E-7187-D077-1BA2-7D52918B406E}" name="DSP">
+        <FILE id="RbEMgG" name="AudioEffect.cpp" compile="1" resource="0" file="Source/DSP/AudioEffect.cpp"/>
+        <FILE id="G9ydY3" name="AudioEffect.h" compile="0" resource="0" file="Source/DSP/AudioEffect.h"/>
+        <FILE id="H8SH5M" name="GainEffect.cpp" compile="1" resource="0" file="Source/DSP/GainEffect.cpp"/>
+        <FILE id="aux3zr" name="GainEffect.h" compile="0" resource="0" file="Source/DSP/GainEffect.h"/>
+      </GROUP>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>

@@ -16,7 +16,8 @@
 //==============================================================================
 /**
 */
-class BinauralPannerV1AudioProcessorEditor  : public juce::AudioProcessorEditor
+class BinauralPannerV1AudioProcessorEditor  : public juce::AudioProcessorEditor,
+                                                public juce::ComboBox::Listener
 {
 public:
     BinauralPannerV1AudioProcessorEditor (BinauralPannerV1AudioProcessor&);
@@ -25,6 +26,8 @@ public:
     //==============================================================================
     void paint (juce::Graphics&) override;
     void resized() override;
+    
+    virtual void comboBoxChanged (juce::ComboBox *comboBoxThatHasChanged) override;
 
 private:
     // This reference is provided as a quick way for your editor to
@@ -40,6 +43,8 @@ private:
     
     LargeKnob largeKnobLNF;
     SmallKnob smallKnobLNF;
+    
+    juce::ComboBox effectSelector;
     
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (BinauralPannerV1AudioProcessorEditor)
