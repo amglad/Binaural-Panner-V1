@@ -45,7 +45,7 @@ private:
     juce::Label verticalLabel;
     juce::Label distanceLabel;
     
-    juce::LookAndFeel_V1 lookAndFeelV3;
+    juce::LookAndFeel_V3 lookAndFeelV3;
     
     LargeKnob largeKnobLNF;
     SmallKnob smallKnobLNF;

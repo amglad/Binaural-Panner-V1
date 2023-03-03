@@ -19,6 +19,7 @@ BinauralPannerV1AudioProcessorEditor::BinauralPannerV1AudioProcessorEditor (Bina
     
     bgImage = juce::ImageCache::getFromMemory(BinaryData::vaporwave_jpg, BinaryData::vaporwave_jpgSize);
     
+    
     // horizontal plane (azimuth) knob
     horizontalKnob.setSliderStyle(juce::Slider::RotaryHorizontalVerticalDrag);
     horizontalKnob.setBounds(361,118,173,200);
@@ -31,7 +32,8 @@ BinauralPannerV1AudioProcessorEditor::BinauralPannerV1AudioProcessorEditor (Bina
     
     horizontalLabel.setText("Horizontal Angle", juce::dontSendNotification);
     horizontalLabel.attachToComponent(&horizontalKnob, false);
-    horizontalLabel.setFont(juce::Font(18.0));
+    horizontalLabel.setFont(juce::Font("Times New Roman", 24.0, juce::Font::bold));
+    horizontalLabel.setColour(juce::Label::textColourId, juce::Colours::peachpuff);
     horizontalLabel.setJustificationType(juce::Justification::centredTop);
     addAndMakeVisible(horizontalLabel);
     
@@ -48,7 +50,8 @@ BinauralPannerV1AudioProcessorEditor::BinauralPannerV1AudioProcessorEditor (Bina
     
     verticalLabel.setText("Vertical Angle", juce::dontSendNotification);
     verticalLabel.attachToComponent(&verticalKnob, false);
-    verticalLabel.setFont(juce::Font(18.0));
+    verticalLabel.setFont(juce::Font("Times New Roman", 18.0, juce::Font::bold));
+    verticalLabel.setColour(juce::Label::textColourId, juce::Colours::peachpuff);
     verticalLabel.setJustificationType(juce::Justification::centredTop);
     addAndMakeVisible(verticalLabel);
     
@@ -65,10 +68,10 @@ BinauralPannerV1AudioProcessorEditor::BinauralPannerV1AudioProcessorEditor (Bina
     
     distanceLabel.setText("Distance", juce::dontSendNotification);
     distanceLabel.attachToComponent(&distanceSlider, false);
-    distanceLabel.setFont(juce::Font(18.0));
+    distanceLabel.setFont(juce::Font("Times New Roman", 24.0, juce::Font::bold));
+    distanceLabel.setColour(juce::Label::textColourId, juce::Colours::peachpuff);
     distanceLabel.setJustificationType(juce::Justification::centredTop);
     addAndMakeVisible(distanceLabel);
-    
     
     
 //    effectSelector.addListener(this);
@@ -84,15 +87,19 @@ BinauralPannerV1AudioProcessorEditor::~BinauralPannerV1AudioProcessorEditor()
 }
 
 //==============================================================================
+
 void BinauralPannerV1AudioProcessorEditor::paint (juce::Graphics& g)
 {
     // (Our component is opaque, so we must completely fill the background with a solid colour)
 
     g.drawImageAt(bgImage,0,0);
 
-    g.setColour (juce::Colours::whitesmoke);
-    g.setFont (30.0f);
-    g.drawFittedText ("Binaural Panner", getLocalBounds(), juce::Justification::centredTop, 1);}
+    g.setFont(juce::Font ("Times New Roman", 32.0f, juce::Font::bold));
+    g.setColour (juce::Colours::peachpuff);
+    // g.drawFittedText ("Binaural Panner", getLocalBounds(), juce::Justification::centredTop, 1);
+    g.drawFittedText ("Binaural Panner", 200,15,300,50, juce::Justification::centred, 1);
+    
+}
 
 void BinauralPannerV1AudioProcessorEditor::resized()
 {
