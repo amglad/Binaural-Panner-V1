@@ -12,12 +12,13 @@
 #include "PluginProcessor.h"
 #include "Components/LargeKnob.h"
 #include "Components/SmallKnob.h"
+#include "Components/DistanceSlider.h"
 
 //==============================================================================
 /**
 */
-class BinauralPannerV1AudioProcessorEditor  : public juce::AudioProcessorEditor,
-                                                public juce::ComboBox::Listener
+class BinauralPannerV1AudioProcessorEditor  : public juce::AudioProcessorEditor
+                                               // public juce::ComboBox::Listener
 {
 public:
     BinauralPannerV1AudioProcessorEditor (BinauralPannerV1AudioProcessor&);
@@ -27,7 +28,7 @@ public:
     void paint (juce::Graphics&) override;
     void resized() override;
     
-    virtual void comboBoxChanged (juce::ComboBox *comboBoxThatHasChanged) override;
+    // virtual void comboBoxChanged (juce::ComboBox *comboBoxThatHasChanged) override;
 
 private:
     // This reference is provided as a quick way for your editor to
@@ -36,15 +37,21 @@ private:
     
     juce::Image bgImage;
     
-    juce::Slider slider1;
-    juce::Slider slider2;
+    juce::Slider horizontalKnob;
+    juce::Slider verticalKnob;
+    juce::Slider distanceSlider;
+    
+    juce::Label horizontalLabel;
+    juce::Label verticalLabel;
+    juce::Label distanceLabel;
     
     juce::LookAndFeel_V1 lookAndFeelV3;
     
     LargeKnob largeKnobLNF;
     SmallKnob smallKnobLNF;
+    DistanceSlider distanceSliderLNF;
     
-    juce::ComboBox effectSelector;
+    // juce::ComboBox effectSelector;
     
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (BinauralPannerV1AudioProcessorEditor)

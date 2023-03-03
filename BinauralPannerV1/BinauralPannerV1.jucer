@@ -11,12 +11,21 @@
       <FILE id="sDpRIX" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
       <FILE id="ulJYuG" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
-      <GROUP id="{8CB4A624-BBCB-256F-23AA-2F300D7ACB08}" name="BinaryData">
-        <FILE id="Vph3Is" name="background.png" compile="0" resource="1" file="Source/BinaryData/background.png"/>
-        <FILE id="FBQ00z" name="knob_large.png" compile="0" resource="1" file="Source/BinaryData/knob_large.png"/>
-        <FILE id="ZWsqzQ" name="knob_small.png" compile="0" resource="1" file="Source/BinaryData/knob_small.png"/>
+      <GROUP id="{3F2A12B1-4214-BB2D-C556-1C45C6D18591}" name="BinaryData">
+        <FILE id="RLOZ0x" name="knob_small.png" compile="0" resource="1" file="Source/BinaryData/knob_small.png"/>
+        <FILE id="I60vM5" name="largeBall.png" compile="0" resource="1" file="Source/BinaryData/largeBall.png"/>
+        <FILE id="Iq9R8V" name="rustyKnob.png" compile="0" resource="1" file="Source/BinaryData/rustyKnob.png"/>
+        <FILE id="G6cf8d" name="slateKnob.png" compile="0" resource="1" file="Source/BinaryData/slateKnob.png"/>
+        <FILE id="GzVTR9" name="smallBall.png" compile="0" resource="1" file="Source/BinaryData/smallBall.png"/>
+        <FILE id="iovRSV" name="smallestBall.png" compile="0" resource="1"
+              file="Source/BinaryData/smallestBall.png"/>
+        <FILE id="VlwlqA" name="vaporwave.jpg" compile="0" resource="1" file="Source/BinaryData/vaporwave.jpg"/>
       </GROUP>
       <GROUP id="{63583A9C-5C3E-F99B-37DD-17A580361919}" name="Components">
+        <FILE id="Rj56hK" name="DistanceSlider.cpp" compile="1" resource="0"
+              file="Source/Components/DistanceSlider.cpp"/>
+        <FILE id="SG3HOR" name="DistanceSlider.h" compile="0" resource="0"
+              file="Source/Components/DistanceSlider.h"/>
         <FILE id="sHrSHs" name="SmallKnob.cpp" compile="1" resource="0" file="Source/Components/SmallKnob.cpp"/>
         <FILE id="h7jmzM" name="SmallKnob.h" compile="0" resource="0" file="Source/Components/SmallKnob.h"/>
         <FILE id="Pee7cI" name="LargeKnob.cpp" compile="1" resource="0" file="Source/Components/LargeKnob.cpp"/>
